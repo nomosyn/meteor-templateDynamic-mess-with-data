@@ -1,0 +1,26 @@
+<head>
+    <title>test-callbacks</title>
+</head>
+
+<body>
+    <h1>Welcome to Meteor!</h1>
+
+    <button>Toggle button</button>
+
+    {{> Template.dynamic curTpt}}
+    {{#if left}}
+        {{> helloLeft dataInTpt="left"}}
+    {{else}}
+        {{> helloRight dataInTpt="right"}}
+    {{/if}}
+</body>
+
+<template name="helloLeft">
+    <h1>hello left</h1>
+    <p>You've pressed the button {{counter}} times.</p>
+</template>
+
+<template name="helloRight">
+    <h1>hello right</h1>
+    <p>You've pressed the button {{counter}} times.</p>
+</template>
