@@ -6,7 +6,6 @@ if (Meteor.isClient) {
 
     Template.body.events({
         'click button': function () {
-            // increment the counter when button is clicked
             Session.set('button', ! Session.get('button'));
         }
     });
