@@ -9,11 +9,12 @@
 
     {{> Template.dynamic curTpt}}
 
-    {{#if left}}
-        {{> helloLeft dataInTpt="left"}}
-    {{else}}
-        {{> helloRight dataInTpt="right"}}
-    {{/if}}
+    <!-- {{> Template.dynamic curTpt}} expected to behave the same as: -->
+    <!-- {{#if left}} -->
+    <!--     {{> helloLeft dataInTpt="left"}} -->
+    <!-- {{else}} -->
+    <!--     {{> helloRight dataInTpt="right"}} -->
+    <!-- {{/if}} -->
 </body>
 
 <template name="helloLeft">

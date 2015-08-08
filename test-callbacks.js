@@ -23,6 +23,11 @@ if (Meteor.isClient) {
     });
 
 
+    Template.helloRight.onCreated(function () {
+        var self = this;
+        debugger;
+    });
+
     Template.helloLeft.onCreated(function () {
         var self = this;
         debugger;
